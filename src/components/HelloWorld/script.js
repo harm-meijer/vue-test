@@ -1,6 +1,9 @@
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
-  }
-}
+  },
+  data: () => ({
+    categories: null
+  })
+};
