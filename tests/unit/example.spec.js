@@ -9,8 +9,12 @@ describe("HelloWorld/index.vue", () => {
     });
     expect(wrapper.text()).toMatch(msg);
     wrapper.setData({
-      categories: "ok"
+      foo: "bar"
     });
-    expect(wrapper.vm.category).toBe("ok");
+    // https://vue-test-utils.vuejs.org/api/wrapper/#setdata
+    //  according to documentation but never passes
+    //  foo is undefined
+    debugger;
+    expect(wrapper.vm.foo).toBe("bar");
   });
 });

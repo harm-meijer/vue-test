@@ -4,6 +4,6 @@ export default {
     msg: String
   },
   data: () => ({
-    categories: null
+    foo: null
   })
 };
